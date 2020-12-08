@@ -1,0 +1,40 @@
+.infoBox {
+    flex: 1;
+    cursor: pointer;
+}
+.infoBox::-webkit-scrollbar {
+    display: none;
+}
+
+.infoBox:not(:last-child) {
+    margin-right: 15px;
+}
+
+.infoBox--selected {
+    border-top: 10px solid rgb(133, 136, 129);
+}
+
+.infoBox__cases {
+    color: #cc1034;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.infoBox__cases--green {
+    color: #86cc86;;
+}
+
+.infoBox__total {
+    color: #6c757d;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    .infoBox {
+        min-width: 20%;
+        margin-top: 20px;
+    }
+}

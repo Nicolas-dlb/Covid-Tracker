@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h3 {
+  color: rgb(68 67 66);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #f5f6fa;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app__graph {
+  flex-grow: 1;
+}
+
+.app__graphTitle {
+  margin: 20px 0;
+}
+
+
+.app__dropdown {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.PrivateNotchedOutline-root-1 {
+  border-style: none !important;
+}
+
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #484b58 !important;
+  border-width: 0 !important;
+}
+
+.MuiSelect-select:focus {
+  background-color: white !important;
+  border-radius: 10px !important;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app__right {
+  display: flex;
+  flex: column;
+  border-radius: 10px !important;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__right .MuiCardContent-root {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-grow: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.jss1 {
+  border-style: none !important;
+  border-width: 0 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:990px) {
+  .app {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .app__right {
+    margin-top: 20px;
+  }
+
+  #menu- > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
+    width: 100%;
+  }
+
+  li.MuiButtonBase-root.MuiListItem-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiListItem-gutters.MuiListItem-button {
+    justify-content: center;
+}
+  
+  #menu- > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (max-width:600px) {
+
+  .app__stats::-webkit-scrollbar {
+    display: none;
   }
 }
