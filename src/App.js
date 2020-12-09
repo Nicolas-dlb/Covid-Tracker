@@ -80,7 +80,7 @@ function App() {
           </FormControl>
         </div>
         <div className="app__stats">
-          <InfoBox 
+          <InfoBox
           isRed
           active={casesType === "cases"} 
           onClick={e => setCasesType("cases")} 
@@ -88,7 +88,7 @@ function App() {
           cases={prettyPrintStat(countryInfo.todayCases)} 
           total={prettyPrintStat(countryInfo.cases)}
           />
-          <InfoBox 
+          <InfoBox
           active={casesType === "recovered"} 
           onClick={e => setCasesType("recovered")} 
           title="Recovered" 
